@@ -10,6 +10,9 @@ import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import fr.ecole.tp.model.Produit;
+import java.util.List;
+import java.util.function.Consumer;
+
 
 
 public class ProduitService {
