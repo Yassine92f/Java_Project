@@ -12,4 +12,13 @@ public class LigneCommande {
         this.produit = produit;
         this.quantite = quantite;
     }
+
+
+    public String getProduit() {
+        return produit.getNom();
+    }
+
+    public int getQuantite() {
+        return quantite;
+    }
 }
