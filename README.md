@@ -63,9 +63,9 @@ parallelStream découpe le travail sur plusieurs threads, donc ça peut aller pl
 
 ## Répartition du travail
 
-- Étudiant 1 : les classes du modèle (Produit, Client, LigneCommande, Commande) et la DataFactory avec les données.
-- Étudiant 2 : les traitements Stream (filtres, tris, calculs, commandes).
-- Étudiant 3 : le menu console, les tests, le Gitflow et le README.
+- Thirisan : les classes du modèle (Produit, Client, LigneCommande, Commande) et la DataFactory avec les données.
+- Yassine : les traitements Stream (filtres, tris, calculs, commandes).
+- Smain : le menu console, les tests, le Gitflow et le README.
 
 ## Difficultés rencontrées
 
