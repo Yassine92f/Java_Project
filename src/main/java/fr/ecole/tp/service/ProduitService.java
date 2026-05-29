@@ -3,6 +3,7 @@ package fr.ecole.tp.service;
 
 import java.util.Comparator;
 import java.util.List;
+import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collector;
@@ -12,6 +13,12 @@ import fr.ecole.tp.model.Produit;
 
 
 public class ProduitService {
+
+    // Fonctionnalité 1
+    public static void afficherTousLesProduits(List<Produit> listeProduits) {
+        Consumer<Produit> afficherProduit = System.out::println;
+        listeProduits.forEach(afficherProduit);
+    }
 
     // Fonctionnalité 2
     public static Function<Produit, String> nomVariable =  produit -> "[" + produit.getCategorie().toUpperCase() + "]"+ " " + produit.getNom() + " - " + produit.getPrix() + " €";

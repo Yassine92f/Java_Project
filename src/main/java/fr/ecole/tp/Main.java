@@ -11,6 +11,9 @@ public class Main {
     public static void main(String[] args) {
         List<Produit> produits = DataFactory.getProduits();
 
+        // Fonctionnalité 1
+        ProduitService.afficherTousLesProduits(produits);
+
         // Fonctionnalité 2
         Produit p = DataFactory.getProduits().get(0);
         System.out.println(ProduitService.nomVariable.apply(p));
