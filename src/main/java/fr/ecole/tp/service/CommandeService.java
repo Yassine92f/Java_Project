@@ -4,6 +4,7 @@ import java.util.Map;
 import java.util.UUID;
 import java.util.function.BiFunction;
 import java.util.function.Supplier;
+import java.util.function.UnaryOperator;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -43,6 +44,28 @@ public class CommandeService {
             System.out.println("Commande " + id + " : " + total + " €"));
 
     }
+
+    //Fonctionnalité 16
+    public static void creationSupplier(List<Commande> commandes) {
+
+        Supplier<String> idGenerator = () -> UUID.randomUUID().toString();
+        String nouvelID = idGenerator.get();
+        System.out.println("Nouvel id : " + nouvelID);
+    }
+
+
+    // Fonctionnalité 17
+    public static void nettoyageSaisie() {
+        UnaryOperator<String> nettoyerSaisie = s -> s.trim().toLowerCase();
+
+        String saisieSale = "   Clavier MÉCANIQUE   ";
+        String saisiePropre = nettoyerSaisie.apply(saisieSale);
+
+        System.out.println("Avant : '" + saisieSale + "'");
+        System.out.println("Après : '" + saisiePropre + "'");
+    }
+
+
 
 
 }
