@@ -1,5 +1,6 @@
+package fr.ecole.tp.model;
 
-public Class Client {
+public class LigneCommande {
 
     private final Produit produit;
     private final int quantite;
