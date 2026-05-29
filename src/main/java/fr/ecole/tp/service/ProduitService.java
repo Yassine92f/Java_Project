@@ -55,6 +55,14 @@ public class ProduitService {
 
     }
 
+    public static void ProduitsParCategorie(List<Produit> listeProduits, String categorie) {
+        listeProduits.stream().filter(p -> p.getCategorie().equals(categorie)).forEach(System.out::println);
+    }
+
+    public static void ProduitsEnPromotion(List<Produit> listeProduits) {
+        listeProduits.stream().filter(p -> p.isPromotion() == true).forEach(System.out::println);
+    }
+
 
     // Fonctionnalité 5
     public static void TransformationMap(List<Produit> listeProduits) {
