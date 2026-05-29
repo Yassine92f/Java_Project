@@ -1,7 +1,7 @@
 package fr.ecole.tp.model;
 
 
-public Class Client {
+public class Client {
 
     private final String id;
     private final String nom;
