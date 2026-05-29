@@ -1,6 +1,7 @@
 package fr.ecole.tp;
 
 import fr.ecole.tp.service.ProduitService;
+import fr.ecole.tp.service.CommandeService;
 import fr.ecole.tp.util.DataFactory;
 import fr.ecole.tp.model.Produit;
 
@@ -23,7 +24,6 @@ public class Main {
         // Fonctionnalité 5
         ProduitService.TransformationMap(produits);
 
-
         // Fonctionnalité 6
         ProduitService.TriAvecComparator(produits);
 
@@ -32,12 +32,10 @@ public class Main {
         ProduitService.AvecSet(produits);
 
         // Fonctionnalité 8
-
         ProduitService.AfficherLimit(produits);
 
         // Fonctionnalité 9
         ProduitService.Pagination(produits);
-
 
         // Fonctionnalité 10
         ProduitService.PrixTotal(produits);
@@ -46,10 +44,9 @@ public class Main {
         ProduitService.PrixTotalAvecMap(produits);
 
         // Fonctionnalité 12
-
         ProduitService.Traitement(produits);
 
-
-
+        // Fonctionnalité 13
+        CommandeService.afficherProduitsCommandes(DataFactory.getCommandes());
     }
 }
