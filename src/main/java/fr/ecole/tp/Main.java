@@ -4,6 +4,7 @@ import fr.ecole.tp.service.ProduitService;
 import fr.ecole.tp.service.CommandeService;
 import fr.ecole.tp.util.DataFactory;
 import fr.ecole.tp.model.Produit;
+import fr.ecole.tp.model.Commande;
 
 import java.util.List;
 
@@ -51,5 +52,14 @@ public class Main {
 
         // Fonctionnalité 13
         CommandeService.afficherProduitsCommandes(DataFactory.getCommandes());
+
+
+        // Fonctionnalité 14
+        CommandeService.totalToutesCommande(DataFactory.getCommandes());
+        System.out.println("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
+
+        // Fonctionnalité 15
+        CommandeService.mapString(DataFactory.getCommandes());
+
     }
 }
