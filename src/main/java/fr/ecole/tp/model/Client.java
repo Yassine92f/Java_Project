@@ -13,4 +13,16 @@ public class Client {
         this.nom = nom;
         this.email = email;
     }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getEmail() {
+        return email;
+    }
 }
