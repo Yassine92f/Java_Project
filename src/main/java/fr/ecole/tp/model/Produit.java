@@ -35,14 +35,14 @@ public class Produit {
         return promotion;
     }
 
-    // @Override
-    // public String toString() {
-    //     return "Produit{" +
-    //             "id='" + id + '\'' +
-    //             ", nom='" + nom + '\'' +
-    //             ", categorie='" + categorie + '\'' +
-    //             ", prix=" + prix +
-    //             ", promotion=" + promotion +
-    //             '}';
-    // }
+    @Override
+    public String toString() {
+        return "Produit{" +
+                "id='" + id + '\'' +
+                ", nom='" + nom + '\'' +
+                ", categorie='" + categorie + '\'' +
+                ", prix=" + prix +
+                ", promotion=" + promotion +
+                '}';
+    }
 }
