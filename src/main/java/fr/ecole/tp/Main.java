@@ -41,10 +41,10 @@ public class Main {
                                         ProduitService.TriAvecComparator(produits);
                                         break;
                                 case 3:
-                                        ProduitService.Filtrage(produits);
+                                        ProduitService.ProduitsParCategorie(produits, "Informatique");
                                         break;
                                 case 4:
-                                        ProduitService.Filtrage(produits);
+                                        ProduitService.ProduitsEnPromotion(produits);
                                         break;
                                 case 5:
                                         ProduitService.TransformationMap(produits);
