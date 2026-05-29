@@ -91,9 +91,7 @@ class ProduitServiceTest {
     
     @Test
     void doitCalculerLeTotalCatalogueAvecMapToDouble() {
-        double total = produits.stream()
-                .mapToDouble(Produit::getPrix)
-                .sum();
+        double total = produits.stream().mapToDouble(Produit::getPrix).sum();
 
         assertEquals(954.0, total, 0.001);
     }
@@ -103,9 +101,7 @@ class ProduitServiceTest {
     
     @Test
     void doitRecupererLesCategoriesUniques() {
-        Set<String> categories = produits.stream()
-                .map(Produit::getCategorie)
-                .collect(Collectors.toSet());
+        Set<String> categories = produits.stream().map(Produit::getCategorie).collect(Collectors.toSet());
 
         assertEquals(3, categories.size());
         assertTrue(categories.contains("Informatique"));
@@ -136,8 +132,7 @@ class ProduitServiceTest {
     
     @Test
     void doitTrouverLeProduitLePlusCher() {
-        Optional<Produit> plusCher = produits.stream()
-                .max(Comparator.comparing(Produit::getPrix));
+        Optional<Produit> plusCher = produits.stream().max(Comparator.comparing(Produit::getPrix));
 
         assertTrue(plusCher.isPresent());
         assertEquals("Lave-linge", plusCher.get().getNom());
