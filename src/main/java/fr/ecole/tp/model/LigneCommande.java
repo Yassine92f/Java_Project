@@ -14,8 +14,8 @@ public class LigneCommande {
     }
 
 
-    public String getProduit() {
-        return produit.getNom();
+    public Produit getProduit() {
+        return produit;
     }
 
     public int getQuantite() {
