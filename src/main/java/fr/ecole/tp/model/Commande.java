@@ -9,4 +9,22 @@ public class Commande {
     private final Client client;
     private final List<LigneCommande> lignes;
 
+    public Commande(String id, Client client, List<LigneCommande> lignes) {
+        this.id = id;
+        this.client = client;
+        this.lignes = lignes;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public List<LigneCommande> getLignes() {
+        return lignes;
+    }
+
 }
