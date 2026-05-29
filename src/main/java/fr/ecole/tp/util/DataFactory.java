@@ -1,4 +1,4 @@
-package fr.ecole.tp;
+package fr.ecole.tp.util;
 
 import fr.ecole.tp.model.Client;
 import fr.ecole.tp.model.Commande;
